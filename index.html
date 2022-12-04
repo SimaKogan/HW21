@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="styles/forms.css">
+</head>
+
+<body>
+    <form class="form-class" id="employee-form" onsubmit="onSubmit(event)">
+        <div class="two-inputs">
+            <input type="text" name="employee_name" required placeholder="Enter employee name">
+            <input type="email" name="email" required placeholder="Enter employee mail">
+        </div>
+
+        <div class="date-label" id="dateBlock">
+            <label>Enter birth date</label>
+            <input type="date" name="birth_date" required placeholder="Enter birth date" onchange="onChange(event)">
+        </div>
+
+        <div class="two-inputs">
+            <select name="department" required>
+                <option value hidden selected disabled>
+                    --Select Department--
+                </option>
+                <option value="QA">QA </option>
+                <option value="Development">Development </option>
+                <option value="Managment">Managment</option>
+                <option value="Audit">Audit</option>
+            </select>
+
+            <div id="salaryBlock">
+                <input type="number" name="Salary" placeholder="Enter salary" onchange="onChange(event)" required>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+
+    </form>
+
+    <script src="src/forms.js"></script>
+</body>
+
+</html>

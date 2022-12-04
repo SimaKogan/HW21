@@ -1,0 +1,30 @@
+body{
+    margin-left: 5vw;
+}
+.form-class{
+    display: flex;
+    flex-direction: column;
+   
+}
+.two-inputs{
+    display: flex;
+    justify-content: space-between;
+    width: 20vw;
+    margin-top: 2vh;
+   
+}
+.two-inputs select{
+    height: fit-content;
+}
+.date-label{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 2vh;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10vh;
+    width: 20vw;
+}
